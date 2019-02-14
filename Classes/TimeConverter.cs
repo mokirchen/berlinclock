@@ -10,7 +10,7 @@ namespace BerlinClock
     {
         public string convertTime(string aTime)
         {
-            //note: 24:00:00 cannot be parsed to timespan because the max hour in gregorian calendar is 23
+            //note: 24:00:00 cannot be parsed to timespan because the datetime class max time is 23:59:59
             //convert time string to individual parts instead
             string[] timeParts = aTime.Split(':');
             int hours = int.Parse(timeParts[0]);
